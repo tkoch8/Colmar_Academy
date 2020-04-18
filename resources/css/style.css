@@ -1,0 +1,107 @@
+html {
+    font-family: 'Mukta', sans-serif;
+    font-size: 16px;
+    background-color: seashell;
+    display: block;
+    color: #393939;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.1em;
+    padding-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3em;
+    padding-bottom: 0.75em;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    height: 64px;
+    width: 100%;
+    position: fixed;
+    background-color: seashell;
+    justify-content: space-between;
+    top: 0px;
+}
+
+header .top-container {
+    display: flex;
+    margin-left: 24px;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #aaa;
+}
+
+header .top-container strong {
+    font-weight: 700;
+    color: #555;
+    padding-left: 0.1rem;
+    font-size: 1.05em;
+    padding-bottom: 0.07em;
+}
+
+.img-container .logo {
+    height: 32px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    padding-right: 24px;
+}
+
+header li {
+    font-size: 1.4rem;
+    padding: 0 8px;
+}
+
+header li a {
+    color: #555;
+}
+
+#top-section {
+    background-color: #ccc9c5;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 64px;
+}
+
+#top-section .img-container {
+    width: 60%;
+    margin: 32px 24px;
+}
+
+#top-section img {
+    width: 100%;
+}
+
+#top-section .text-container {
+    margin: auto 24px;
+    width: 25%;
+}
+
+#top-section button {
+    background-color: #333;
+    color: #ddd;
+    font-size: 1rem;
+    border: none;
+    width: 100%;
+    padding: 0.8em;
+    letter-spacing: 0.05em;
+}
