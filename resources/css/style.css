@@ -342,7 +342,11 @@ footer li a {
     padding: 0 16px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 720px) {
+    
+    .desktop {
+        display: none;
+    }
     
     header .desktop {
         display: none;
@@ -384,15 +388,104 @@ footer li a {
         height: 100%;
     }
 
+#top-section {
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+}
+
     #top-section .img-container {
         width: 100%;
+        height: 256px;
         margin: 0;
+        overflow: hidden;
     }
 
     #top-section .text-container {
-        margin: 0;
+        margin: 0 auto;
         padding: 32px 16px;
+        width: 90%;
+    }
+    
+    #top-section button {
+        display: block;
         width: 100%;
+        margin: 0 auto;
     }
 
+    #info-section {
+        padding: 0;
+    }
+    
+    #info-section .additional-topics {
+        width: 100%;
+        padding-inline-start: 0px;
+    }
+   
+    #info-section .additional-topics li {
+        width: 100%;
+        border: none;
+        flex-wrap: wrap;
+    }
+
+    #info-section .additional-topics li .img-container {
+        max-width: 100%;
+        overflow: hidden;
+        margin: 0;
+    }
+    #info-section .additional-topics li .text-container {
+        width: 100%;
+        margin-left: 32px;
+        margin-bottom: 32px;
+    }
+
+    #info-section h4 {
+        font-size: 1.5rem;
+    }
+
+    #info-section .text-container p {
+        font-size: 1.1rem;
+    }
+
+    #info-section .text-container a {
+        font-size: 1.1rem;
+    }
+
+    #info-section .highlight {
+        background-color: seashell;
+    }
+
+    #start-learning {
+        background-color: seashell;
+    }
+
+    #start-learning h2 {
+        padding-bottom: 16px;
+    }
+
+    #start-learning ul {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+
+    #start-learning li {
+        margin: 8px 0;
+        padding: 16px 0 20px 0;
+        background-color: #ccc;
+        width: 90%;
+    }
+
+    #start-learning h4 {
+        font-size: 1.5rem;
+    }
+
+
+    footer {
+        border: none;
+        padding: 40px 0 16px 16px;
+        font-size: 1rem;
+    }
 }
