@@ -6,11 +6,16 @@ html {
     color: #393939;
 }
 
+.mobile {
+    display: none;
+}
+
 h2 {
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 1.1em;
     padding-bottom: 0.5em;
+    color: #555;
 }
 
 h3 {
@@ -20,11 +25,27 @@ h3 {
     padding-bottom: 0.75em;
 }
 
-a {
-    text-decoration: none;
+h4 {
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
-header {
+a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s ease-out;
+}
+
+a:hover {
+    color: #588;
+}
+
+p {
+    font-weight: 300;
+}
+
+
+header .desktop {
     display: flex;
     height: 64px;
     width: 100%;
@@ -34,7 +55,7 @@ header {
     top: 0px;
 }
 
-header .top-container {
+header .desktop .top-container {
     display: flex;
     margin-left: 24px;
     align-items: center;
@@ -43,7 +64,7 @@ header .top-container {
     color: #aaa;
 }
 
-header .top-container strong {
+header .desktop .top-container strong {
     font-weight: 700;
     color: #555;
     padding-left: 0.1rem;
@@ -51,28 +72,24 @@ header .top-container strong {
     padding-bottom: 0.07em;
 }
 
-.img-container .logo {
+.desktop .img-container .logo {
     height: 32px;
 }
 
-header nav {
+header .desktop nav {
     display: flex;
     align-items: center;
 }
 
-header ul {
+header .desktop ul {
     display: flex;
     align-items: center;
     padding-right: 24px;
 }
 
-header li {
+header .desktop li {
     font-size: 1.4rem;
     padding: 0 8px;
-}
-
-header li a {
-    color: #555;
 }
 
 #top-section {
@@ -98,10 +115,270 @@ header li a {
 
 #top-section button {
     background-color: #333;
-    color: #ddd;
+    color: #ccc;
     font-size: 1rem;
     border: none;
     width: 100%;
     padding: 0.8em;
     letter-spacing: 0.05em;
+    transition: background-color 0.3s, color 0.3s;
+    border: 1px solid #777;
+}
+
+#top-section button:hover {
+    background-color: #335;
+    color: #cee;
+}
+
+#info-section {
+    display: flex;
+    padding: 32px 0 32px 24px;
+}
+
+#info-section .main-topic {
+    width: 60%;
+    padding-right: 24px;
+}
+
+#info-section .main-topic .img-container {
+    width: 100%;
+}
+
+#info-section .main-topic img {
+    width: 100%;
+}
+
+#info-section .main-topic h2 {
+    padding-top: 32px;
+    padding-bottom: 24px;
+    font-size: 2rem;
+}
+
+#info-section .main-topic p {
+    line-height: 1.2em;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+#info-section .main-topic aside {
+    font-size: 0.8rem;
+    padding-top: 2rem;
+    color: #555;
+}
+
+#info-section .additional-topics {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+#info-section .additional-topics li {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #ddd;
+}
+
+#info-section .highlight {
+    background-color: #ddd;
+}
+
+#info-section .additional-topics li .img-container {
+    min-width: 35%;
+    max-width: 35%;
+    padding: 16px;
+}
+
+#info-section .additional-topics img {
+    width: 100%;
+}
+
+#info-section .additional-topics p {
+    font-size: 0.9rem;
+    padding-top: 0.4rem;
+    line-height: 1.4em;
+    color: #555;
+    padding-bottom: 0.4rem;
+}
+
+#info-section .additional-topics a {
+    font-size: 0.9rem;
+    color: steelblue;
+    transition: color 0.2s ease-out 0;
+}
+
+#info-section .additional-topics a:hover{
+    color: #9ce;
+}
+
+#start-learning {
+    background-color: #d8d8d8;
+}
+
+#start-learning h2 {
+    text-align: center;
+    padding: 32px 32px 24px 32px;
+}
+
+#start-learning ul {
+    padding: 0 72px 32px 72px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#start-learning li {
+    width: 28%;
+    margin: 16px;
+    background-color: seashell;
+}
+
+#start-learning .img-container {
+    width: 100%;
+}
+
+#start-learning img {
+    width: 100%;
+}
+
+#start-learning .subject-text {
+    padding: 16px;
+}
+#start-learning h4, #start-learning p {
+    color: #555;
+}
+
+#start-learning p {
+    padding-top: 8px;
+    line-height: 1.1em;
+    font-size: 0.9em;
+}
+
+#thesis-exhibit h2 {
+    text-align: center;
+    padding: 32px;
+}
+
+#thesis-exhibit .thesis-flex {
+    display: flex;
+    width: 100%;
+}
+
+#thesis-exhibit .main-topic {
+    width: 60%;
+    margin: 0 24px 32px 24px;
+}
+
+#video-container {
+    width: 100%;
+}
+
+#video-container video {
+    width: 100%;
+}
+
+#thesis-exhibit .main-topic h4 {
+    padding-top: 24px;
+}
+
+#thesis-exhibit .main-topic p {
+    line-height: 1.2em;
+    font-size: 0.9rem;
+    color: #555;
+    padding-top: 8px;
+}
+
+#thesis-exhibit .additional-topics {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+#thesis-exhibit .additional-topics li {
+    display: flex;
+    align-items: center;
+}
+
+#thesis-exhibit .additional-topics .img-container {
+    min-width: 35%;
+    max-width: 35%;
+    padding: 16px;
+}
+
+#thesis-exhibit .additional-topics img {
+    width: 100%;
+}
+
+#thesis-exhibit .additional-topics .text-container {
+    width: 40%;
+}
+
+#thesis-exhibit .additional-topics p {
+    font-size: 0.9rem;
+    padding-top: 0.6rem;
+    line-height: 1.4em;
+    color: #555;
+    padding-bottom: 0.4rem;
+}
+
+footer {
+    border: solid #ccc 1px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px 36px 24px;
+}
+
+footer ul {
+    margin-right: 24px;
+}
+
+footer li {
+    display: inline;
+}
+
+footer li a {
+    padding: 0 16px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .desktop {
+        display: none;
+    }
+
+    header {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        height: 64px;
+    }
+
+    header ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header .img-container {
+        height: 32px;
+        margin: auto;
+    }
+
+    header img {
+        height: 100%;
+    }
+
+    #top-section .img-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    #top-section .text-container {
+        margin: 0;
+        padding: 32px 16px;
+        width: 100%;
+    }
+
 }
